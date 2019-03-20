@@ -1,0 +1,49 @@
+body{
+
+  background-image: url("../img/njHhZgk.jpg");
+  background-repeat: no-repeat;	
+  background-size: 100%;
+  text-align: center;
+  background-color: #2b2c30	;
+}	
+
+.inp{
+	padding-left: 5px;
+  	width: 200px;
+  	height: 25px;
+  	border-width: 1px;
+  	background-color: #cad1af;
+	border: none;
+}
+#UN{
+	background: url('../img/icons/email.png') no-repeat ;
+	
+}
+#pwd{
+	background: url('../img/icons/padlockk.png') no-repeat ;
+	
+}
+
+.form{ 
+	position: all;
+	margin-top: 200px; 
+}
+
+#dd{
+	vertical-align: middle;
+	
+	
+}
+label{
+	font-size: 15px;
+	color: grey;
+}
+
+.form-link{
+	
+}
+#forget-link{
+	font-size: 13px;
+	color: grey;
+
+}

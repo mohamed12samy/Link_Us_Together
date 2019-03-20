@@ -1,0 +1,84 @@
+body{
+  background-repeat: no-repeat;	
+  background-size: 100%;
+  background-color: #676B70	;
+}
+.ico{
+	margin-right: 5px;
+}
+.containing_settings{
+	padding-top: 50px;
+	padding-bottom: 50px; 
+	background-color: #fff;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-right: 50px;
+	overflow: hidden;
+	
+}
+.containing_photo{
+	
+	background-color: #343A40;
+	width: 300px;
+	text-align: center;
+	
+	padding: 30px;
+	color: #FFF;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 25px;
+	float: left ;
+	margin-right: 40px;
+	margin-left: 20px;
+}
+
+.containing_others{
+
+	margin-left: 40px;
+	text-align: left;
+	
+}
+
+input.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+#profile-image {
+    cursor: pointer;
+    width: 100%;
+
+ 	
+}
+#uploadb{
+	background-color: #676B70;
+}
+.inp{
+	margin-top: 5px;
+	width: 200px;
+}
+
+.deleteLink_div{
+	margin-top: 30px;
+	color: red;
+}
+#deleteLink{
+	color: red;
+	text-decoration: underline;
+}
+#deleteLink:hover{
+	color: blue;
+	text-decoration: underline;
+}
+/*delete_acc*/
+.deleteConfirm{
+	background-color: #fff;
+	width: 50%;
+	display: inline-block;
+	margin-left: 250px;
+	margin-top: 200px;
+	padding: 10px;
+	padding-top: 30px;
+	
+	border-radius:20px; 
+}

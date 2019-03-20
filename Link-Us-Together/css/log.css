@@ -1,0 +1,27 @@
+
+.card {
+  background-color: #24313C;
+  vertical-align: middle;
+}
+
+.card-link:hover {
+  text-decoration: none;
+
+}
+
+.card-link + .card-link {
+  margin-left: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  width: 150px;
+  margin-bottom: 2px;
+}

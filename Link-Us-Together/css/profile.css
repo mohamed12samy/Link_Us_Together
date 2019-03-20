@@ -1,0 +1,83 @@
+body{
+	text-align: center;
+}
+.ccontainer{
+	margin: 50px;
+	padding: 25px;
+	width: 450px;
+	background-color: #a9af9c;
+	display: inline-block;
+}
+.profimg{
+	width: 64px; 
+  	height : 64px; 
+  	float:left;
+}
+.prof{
+	width: 100%
+}
+.pic_name{
+	background-color: #343A40;
+	padding:20px;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.Bio{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 2px;
+	text-align: left;
+	border: 1px solid #343A40 ;
+	clear: left;
+
+}
+.picnamedate{
+	text-align: left;
+	background-color: #fff;
+}
+.PoSts{
+	margin: 20px;
+	padding: 10px;
+	text-align: left;
+	background-color: #fff;
+	word-wrap: break-word;
+	
+
+}
+#namedate{
+	color: #676B70;
+	font-style: oblique;
+	font-family: sans-serif;
+	font-size: 12px;
+
+}
+#addbio{
+	border-radius: 60px;
+	width: 100px;
+	text-align: center;
+	
+}
+.bioTArea{
+	margin: 2px;
+	background-color: #FFF;
+	width: 350px;
+	height: 150px;
+	resize: none;
+	border: none;
+	padding: 15px;
+	
+}
+.bioTArea:focus{
+    border: 0 ;
+    outline: none;
+    overflow: hidden;
+}
+#Bio_Button{
+	width: 60px;
+}
+.Bio_div{
+	box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);	
+	background-color: #fff;
+	border-radius: 15px;
+}

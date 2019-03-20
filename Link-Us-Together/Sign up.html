@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/log.css">
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link rel="icon" href="img/icons/email.ico" type="image/x-icon">
+
+	<title>Signing Up </title>
+</head>
+<body>
+	<script  src="js/jquery-3.3.1.min.js"></script>
+	<script  src="js/bootstrap.min.js"></script>
+	<script  src="js/login.js"></script>
+	<script src="js/jquery.validate.js"></script>
+    
+    <script type = "text/javascript">
+      // Form validation code will come here.
+      
+     function validateForm() {
+  var F = document.forms["FORM"]["Fusername"].value;
+var L = document.forms["FORM"]["Lusername"].value;
+var U = document.forms["FORM"]["username"].value;
+
+  var y = document.forms["FORM"]["email"].value;
+  var z = document.forms["FORM"]["password"].value;
+
+  if (F == "") {
+    alert("First name must be filled out");
+    return false;
+  }if (L == "") {
+    alert("Last name must be filled out");
+    return false;
+  }if (U == "") {
+    alert("username must be filled out");
+    return false;
+  }
+if (y == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+         if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.email.value))
+  {
+    alert("invaild email");
+      return false;
+    
+  }
+   
+   if (z == ""|| document.forms["FORM"]["password"].value.length <8) {
+    alert("password must be filled out");
+    return false;
+  }
+}
+</script>
+	<!--FORM VALIDATION-->
+	<!--script type="text/javascript">
+		$(document).ready(function () {
+			$('#ff').validate({
+        rules: {
+            Fusername: {
+                required: true
+            },
+             Lusername: {
+                required: true
+            },
+             email: {
+                required: true,
+                email: true
+            },
+            username: {
+                required: true
+            },
+            password: {
+                required: true,
+                minlength: 8
+            }
+        }
+    });
+});
+	</script-->
+
+	<div id="dd" align="center">
+	<form id="ff" name ="FORM" class="form" method="POST" action="user_signup.php" readonly 
+onfocus="this.removeAttribute('readonly');"  onsubmit="validateForm()">
+		<div class="card" style="width: 20rem;" >
+  		<div class="card-body">
+	    	<h5 class="card-title">Signing up</h5>	
+		    <label>First Name</label> <div id="FUN"><input  class="inp" type="text" name="Fusername" ></div>
+			<br>
+			<label>Last Name </label><div id="LUN"><input  class="inp" type="text" name="Lusername" ></div>
+			<br>
+			<label>Email</label> <div id="email"><input  class="inp" type="Email" name="email" ></div>
+			<br>
+			<label>username</label> <div id="uasername"><input class="inp" type="text" name="username" ></div>
+			<br>
+			<label>Password</label> <div id="pwd"><input class="inp" type="Password" name="password" ></div>
+			<br>
+		    <button class="btn btn-primary" type="submit" ">Sign up</button>
+		    
+		  </div>
+	</div>
+		
+	</form>
+		</div>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>

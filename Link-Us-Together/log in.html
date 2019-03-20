@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/log.css">
+	<link rel="stylesheet" type="text/css" href="css/log in.css">
+	<link rel="icon" href="img/icons/link.png" type="image/x-icon">
+	<title>Log in </title>
+</head>
+<body>
+    <script language='javascript' type='text/javascript'>
+    window.history.forward();
+    </script>
+	<script  src="js/jquery-3.3.1.min.js"></script>
+	<script  src="js/bootstrap.min.js"></script>
+	<script  src="js/login.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<!--FORM VALIDATION-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#ff').validate({ 
+        rules: {
+            username: {
+                required: true
+            },
+            password: {
+                required: true,
+            }
+        }
+    });
+});
+	</script>
+
+	<div id="dd" align="center">
+	<form id="ff"class="form" method="POST" name="FORM" action="user_login.php" > 
+		<div class="card" style="width: 20rem;" >
+  		<div class="card-body">
+	    	<h5 class="card-title">Log in</h5>	
+		    <div id="UN"><input  class="inp" type="text" name="username" placeholder="username"></div>
+			<br>
+			<div id="pwd"><input class="inp" type="Password" name="password" placeholder="password"></div>
+			<br>
+			<input type="checkbox" name="Remember_me" style="width: 20px; "> 
+			<label style="color: #fff;">Remember me</label>
+			<br>
+		    <button id="loginB" class="btn btn-primary" type="submit" >log in</button>
+		    <br>
+		    <a href="#" id="forget-link">Forgot password ?</a>
+		    <br>
+		    <label>Don't have an account</label>
+		    <a href="Sign up.html" class="form-link">Sign up</a>
+	  </div>
+	</div>
+		
+	</form>
+		</div>
+	</body>
+</html>
